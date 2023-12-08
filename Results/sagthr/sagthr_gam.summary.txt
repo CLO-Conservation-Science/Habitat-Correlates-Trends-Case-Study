@@ -1,0 +1,49 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+response ~ s(Barren.PLAND, bs = "ds", k = 4, m = c(1, 0)) + s(Evergreen.Needleleaf.Forests.PLAND, 
+    bs = "ds", k = 4, m = c(1, 0)) + s(Mixed.Broadleaf.Needleleaf.Forests.PLAND, 
+    bs = "ds", k = 4, m = c(1, 0)) + s(Open.Forests.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Sparse.Forests.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Dense.Herbaceous.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Sparse.Herbaceous.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Dense.Shrublands.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Shrubland.Grassland.Mosaics.PLAND, 
+    bs = "ds", k = 4, m = c(1, 0)) + s(Sparse.Shrublands.PLAND, 
+    bs = "ds", k = 4, m = c(1, 0)) + s(Urban.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Herbaceous.Croplands.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(Herbaceous.Wetlands.PLAND, bs = "ds", 
+    k = 4, m = c(1, 0)) + s(elev, bs = "ds", k = 10, m = c(1, 
+    0)) + s(longitude, latitude, bs = "ds", k = 200, m = c(1, 
+    0.5)) + 1
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -1.7662     0.2628  -6.719 2.24e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                                                  edf Ref.df      F  p-value    
+s(Barren.PLAND)                             2.229e-05      3  0.000 0.136287    
+s(Evergreen.Needleleaf.Forests.PLAND)       8.051e-01      3  2.744 2.07e-05 ***
+s(Mixed.Broadleaf.Needleleaf.Forests.PLAND) 1.220e-01      3  0.227 0.011939 *  
+s(Open.Forests.PLAND)                       5.142e-01      3  1.229 0.000252 ***
+s(Sparse.Forests.PLAND)                     2.260e+00      3 36.011  < 2e-16 ***
+s(Dense.Herbaceous.PLAND)                   2.635e+00      3 40.715  < 2e-16 ***
+s(Sparse.Herbaceous.PLAND)                  3.332e-05      3  0.000 0.005561 ** 
+s(Dense.Shrublands.PLAND)                   1.866e-05      3  0.000 0.052345 .  
+s(Shrubland.Grassland.Mosaics.PLAND)        6.346e-06      3  0.000 0.162490    
+s(Sparse.Shrublands.PLAND)                  9.259e-01      3  3.725 5.68e-06 ***
+s(Urban.PLAND)                              9.707e-06      3  0.000 0.329830    
+s(Herbaceous.Croplands.PLAND)               4.179e-01      3  0.904 0.001202 ** 
+s(Herbaceous.Wetlands.PLAND)                5.932e-01      3  1.542 0.000519 ***
+s(elev)                                     6.514e+00      9 26.774  < 2e-16 ***
+s(longitude,latitude)                       2.443e+01    199  2.003  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.471   Deviance explained = 47.8%
+fREML = 859.23  Scale est. = 1.315     n = 2626
