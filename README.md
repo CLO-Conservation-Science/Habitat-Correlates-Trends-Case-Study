@@ -20,4 +20,4 @@ Three R scripts necessary to complete the case study analysis. Files include a s
 This folder structure is necessary to receive and store results from the scripts. Outputs in .csv, .txt, and .RData formats are provided. 
 
 ### Acknowledgements
-To be added.
+We are grateful to the many thousands of participants, reviewers, and partner organizations around the world who support and contribute to eBird. We thank the eBird and engineering teams for their tireless efforts to grow, support, and improve the project. Likewise, none of this work would be possible without the generous support of the Cornell Lab of Ornithology’s members, donors, and many staff teams. This work was funded by The Leon Levy Foundation, The Wolf Creek Foundation, and the National Science Foundation (ABI sustaining: DBI-1939187). This work used Bridges2 at Pittsburgh Supercomputing Center and Anvil (Song et al. 2022) at the Rosen Center for Advanced Computing at Purdue University through allocation DEB200010 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) program, which is supported by NSF grants #2138259, #2138286, #2138307, #2137603, and #2138296.
