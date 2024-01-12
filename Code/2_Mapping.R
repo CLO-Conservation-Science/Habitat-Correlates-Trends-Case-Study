@@ -2,7 +2,7 @@
 #### This script produces plots to visualize results from the manuscript
 ##   1. Create map of species abundance
 ##   2. Create map of species trend
-##   3. Create map of pland, geographic effect & effect on abundance for each predictor
+##   3. Create map of pland, geographic effect, & effect on abundance for each predictor
 ##   4. Create 1D effect plot for each predictor
 #### ------------------------------------------------------------------------------ ####
 library(here)
