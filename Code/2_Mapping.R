@@ -323,7 +323,7 @@ for(l in 3:ncol(geo_plot_mean)){
   
   
   
-  #### ------------------------- 3. Create 1D effect plot for each predictor ------------------------ ####
+  #### ------------------------- 4. Create 1D effect plot for each predictor ------------------------ ####
 
   effect_1D_sub <- effect_1D_mean[,grepl(colnames(geo_plot_mean)[l], colnames(effect_1D_mean))]
   effect_1D_sub[, colnames(geo_plot_mean)[l]] <- pland07[, colnames(geo_plot_mean)[l]]
