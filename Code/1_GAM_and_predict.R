@@ -211,7 +211,6 @@ for (iii_spp in 1:length(spp_list)){
      if (zzz_name != "longitude" & zzz_name != "elev"){
        ## Geographic PPY effect dataset
        zzz <- pred21$fit[, iii_effect]
-       zzz_lim <- c(-1*max(abs(zzz)), max(abs(zzz)))
        save.geo <- cbind(save.geo, zzz)
        colnames(save.geo)[iii_effect+3] <- zzz_name
          
@@ -219,12 +218,11 @@ for (iii_spp in 1:length(spp_list)){
        # Zero out areas w/o feature of interest so that importance is not summarized there
        zero_feature <- D21[, names(D21) == zzz_name ] 
        zero_feature[zero_feature!=0] <- 1
-       zzz_max_pred <- max(abs(quantile(pred21$fit*abd_spp, probs = c(0.99), na.rm = T)))
-       zzz_lim_abdchange <- c(-1*zzz_max_pred, zzz_max_pred)            # Settings for outputs to aid plotting
-       
        zzz <- pred21$fit[,iii_effect] * D21$abd * zero_feature
-       zzz[zzz < -1*zzz_max_pred] <- -1*zzz_max_pred
-       zzz[zzz > zzz_max_pred] <- zzz_max_pred
+       
+       zzz_limit <- max(abs(quantile(zzz, probs = c(0.01, 0.99))))    # Plotting aid for color gradients
+       zzz[zzz < -1*zzz_limit] <- -1*zzz_limit
+       zzz[zzz > zzz_limit] <- zzz_limit
        save.geo.abd <- cbind(save.geo.abd, zzz)
        colnames(save.geo.abd)[iii_effect+3] <- zzz_name
      } 
