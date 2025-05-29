@@ -1,14 +1,22 @@
 # Habitat-Correlates-Trends-Case-Study
 Data and code to run the analysis presented in:
-Stillman, A.N., C.L. Davis, K.D. Dunham, V. Ruiz-Gutierrez, A.D. Rodewald, A. Johnston, T. Auer, M. Strimas-Mackey, S. Ligocki, and D. Fink. In review. A framework for assessing the habitat correlates of spatially explicit population trends. 
+Stillman, A.N., C.L. Davis, K.D. Dunham, V. Ruiz-Gutierrez, A.D. Rodewald, A. Johnston, T. Auer, M. Strimas-Mackey, S. Ligocki, and D. Fink. 2025. A framework for assessing the habitat correlates of spatially explicit population trends. Diversity and Distributions 31:e70030.
 
 *Please contact the first author with any questions about the code or publication: Andrew N. Stillman (ans95[at]cornell.edu)
 
 ## Abstract
-Halting or reversing widespread biodiversity loss will require detailed information on species’ trends and the habitats associated with population declines. However, constraints on conventional monitoring programs and commonplace approaches for trend estimation can make it difficult to obtain such information across species’ ranges. Here, we demonstrate how recent developments in machine learning and model interpretation, combined with increased data collection through large-scale participatory science programs, enable inferences on the habitat correlates of population trends across broad spatial extents. We highlight the utility of this approach using a case study of three songbird species which are strongly associated with the sagebrush ecosystem in North America: Brewer’s sparrow (Spizella breweri), sagebrush sparrow (Artemisiospiza nevadensis), and sage thrasher (Oreoscoptes montanus). Our analysis revealed complex, non-linear associations between land cover variables and species’ population trends as well as substantial interspecific variation in those associations despite the species’ similar reliance on sagebrush habitat. We then leveraged this information in an exploratory analysis to evaluate the potential return on investment for a simulated habitat modification aimed at reducing population declines for a single focal species while also considering potential co-benefits for the other two species. In doing so, we present a framework for assessing wildlife responses to potential habitat modification and environmental change at tractable scales for conservation and decision-making.
+**Aim.** Halting widespread biodiversity loss will require detailed information on species' trends and the habitat conditions correlated with population declines. However, constraints on conventional monitoring programs and commonplace approaches for trend estimation can make it difficult to obtain such information across species' ranges. Here, we demonstrate how recent developments in machine learning and model interpretation, combined with data sources derived from participatory science, enable landscape-scale inferences on the habitat correlates of population trends across broad spatial extents.
+
+**Location.** Worldwide, with a case study in the western United States.
+
+**Methods.** We used interpretable machine learning to understand the relationships between land cover and spatially explicit bird population trends. Using a case study with three passerine birds in the western U.S. and spatially explicit trends derived from eBird data, we explore the potential impacts of simulated land cover modification while evaluating potential co-benefits among species.
+
+**Results.** Our analysis revealed complex, non-linear relationships between land cover variables and species' population trends as well as substantial interspecific variation in those relationships. Areas with the most positive impacts from a simulated land cover modification overlapped for two species, but these changes had little effect on the third species.
+
+**Main Conclusions.** This framework can help conservation practitioners identify important relationships between species trends and habitat while also highlighting areas where potential modifications to the landscape could bring the biggest benefits. The analysis is transferable to hundreds of species worldwide with spatially explicit trend estimates, allowing inference across multiple species at scales that are tractable for management to combat species declines.
 
 ## Repository Directory
-This respository will be archived on Zenodo after acceptance.
+This respository is archived on Dyrad and Zenodo: https://doi.org/10.5061/dryad.8pk0p2nzf. 
 
 ### Data
 All data files necessary to run the analysis in this repository. Files include land cover descriptions for 2007, land cover desriptions for 2021, eBird Trend estimates spanning 2007-2021, and eBird Status estimates of relative abundance for 2021. 
